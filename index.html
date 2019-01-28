@@ -5,16 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Overwatch - Choose your destiny</title>
+    <title>Overwatch - Determine your hero</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <button onclick="myFunction()">Sortear herói</button>
+    <h1>Determine your hero</h1>
 
-    <p>Escolha seu herói por sorteio</p>
-    <p id="extenso">
-        <img src="assets/imgs/ana.png" width="180" height="310">
-    </p>
+    <section class="all">
+        <div class="all-heroes">
+            <h3>All heroes</h3>
+            <button onclick="allHero()">Raffle any hero</button>
+            <p id="heroesId">
+                <img src="assets/imgs/ana.png" width="180" height="310">
+            </p>
+        </div>
+
+        <div class="tanks">
+            <h3>Tank</h3>
+            <button onclick="tank()">Raffle tank hero</button>
+            <p id="tankId">
+                <img src="assets/imgs/d.va.png" width="180" height="310">
+            </p>
+        </div>
+
+        <div class="damage">
+            <h3>Damage</h3>
+            <button onclick="damage()">Raffle damage hero</button>
+            <p id="damageId">
+                <img src="assets/imgs/ashe.png" width="180" height="310">
+            </p>
+        </div>
+
+        <div class="support">
+            <h3>Damage</h3>
+            <button onclick="support()">Raffle damage hero</button>
+            <p id="supportId">
+                <img src="assets/imgs/d.va.png" width="180" height="310">
+            </p>
+        </div>
+
+    </section>
 
     <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
