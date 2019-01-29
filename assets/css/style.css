@@ -1,5 +1,24 @@
-.all {
-    display: flex;
+.all,
+.container-team {
+    display: flex !important;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.container-counter {
+    display: inline;
+}
+
+#heroesId,
+#tankId,
+#damageId,
+#supportId {
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    /* box-shadow: inset 11px 20px 20px 20px black; */
+
+    object-fit: cover;
+  
+    width: 180px;
+    height: 260px;
 }

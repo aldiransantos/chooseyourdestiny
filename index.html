@@ -6,48 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Overwatch - Determine your hero</title>
+    <link rel="stylesheet" href="assets/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+    <p id="tretando"></p>
+    <button onclick="teste()">Let's go dude!</button>
+
+
     <h1>Determine your hero</h1>
 
-    <section class="all">
-        <div class="all-heroes">
-            <h3>All heroes</h3>
-            <button onclick="allHero()">Raffle any hero</button>
-            <p id="heroesId">
-                <img src="assets/imgs/ana.png" width="180" height="310">
-            </p>
-        </div>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all"
+                aria-selected="true">All Heroes</a>
+            <a class="nav-item nav-link" id="nav-tank-tab" data-toggle="tab" href="#nav-tank" role="tab" aria-controls="nav-tank" aria-selected="false">Tank</a>
+            <a class="nav-item nav-link" id="nav-damage-tab" data-toggle="tab" href="#nav-damage" role="tab" aria-controls="nav-damage"
+                aria-selected="false">Damage</a>
+            <a class="nav-item nav-link" id="nav-support-tab" data-toggle="tab" href="#nav-support" role="tab" aria-controls="nav-support"
+                aria-selected="false">Support</a>
+            <a class="nav-item nav-link" id="nav-team-tab" data-toggle="tab" href="#nav-team" role="tab" aria-controls="nav-team" aria-selected="false">Team Hero</a>
+            <a class="nav-item nav-link" id="nav-counter-tab" data-toggle="tab" href="#nav-counter" role="tab" aria-controls="nav-counter"
+                aria-selected="false">Counter</a>
 
-        <div class="tanks">
-            <h3>Tank</h3>
-            <button onclick="tank()">Raffle tank hero</button>
-            <p id="tankId">
-                <img src="assets/imgs/d.va.png" width="180" height="310">
-            </p>
         </div>
-
-        <div class="damage">
-            <h3>Damage</h3>
-            <button onclick="damage()">Raffle damage hero</button>
-            <p id="damageId">
-                <img src="assets/imgs/ashe.png" width="180" height="310">
-            </p>
+    </nav>
+    <div class="tab-content all" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+            <div class="all-heroes">
+                <p id="heroesId">
+                    <img src="assets/imgs/ana.png" width="180" height="310">
+                </p>
+                <button onclick="allHero()">Raffle any hero</button>
+            </div>
         </div>
-
-        <div class="support">
-            <h3>Damage</h3>
-            <button onclick="support()">Raffle damage hero</button>
-            <p id="supportId">
-                <img src="assets/imgs/d.va.png" width="180" height="310">
-            </p>
+        <div class="tab-pane fade" id="nav-tank" role="tabpanel" aria-labelledby="nav-tank-tab">
+            <div class="tanks">
+                <p id="tankId">
+                    <img src="assets/imgs/d.va.png" width="180" height="310">
+                </p>
+                <button onclick="tank()">Raffle tank hero</button>
+            </div>
         </div>
+        <div class="tab-pane fade" id="nav-damage" role="tabpanel" aria-labelledby="nav-damage-tab">
+            <div class="damage">
+                <p id="damageId">
+                    <img src="assets/imgs/ashe.png" width="180" height="310">
+                </p>
+                <button onclick="damage()">Raffle damage hero</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-support" role="tabpanel" aria-labelledby="nav-support-tab">
+            <div class="support">
+                <p id="supportId">
+                    <img src="assets/imgs/mercy.png" width="180" height="310">
+                </p>
+                <button onclick="support()">Raffle support hero</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab">
+            <div class="row container-team">
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+                <div class="team">
+                    <p id="teamId">
+                        <img src="assets/imgs/mercy.png" width="180" height="310">
+                    </p>
+                </div>
+            </div>
 
-    </section>
+            <div class="row">
+                <button onclick="support()">Raffle support hero</button>
+            </div>
+        </div>
+        <div class="tab-pane fade container-counter" id="nav-counter" role="tabpanel" aria-labelledby="nav-counter-tab">
+            <div class="counter">
+                <p id="counterId">
+                    <img src="assets/imgs/mercy.png" width="180" height="310">
+                </p>
+                <button onclick="support()">Raffle support hero</button>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

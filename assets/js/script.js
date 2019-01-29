@@ -1,3 +1,10 @@
+var treta = ['me', 'myself', 'I'];
+
+function teste() {
+    var resultado = Math.floor(Math.random() * treta.length);
+    document.getElementById("tretando").innerHTML = resultado;
+};
+
 function allHero() {
     // var min = 4;
     // var max = 5;
@@ -14,7 +21,7 @@ function allHero() {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/ashe.png\" width=\"180\" height=\"310\">";
     }
-    
+
     else if (result == "2") {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/bastion.png\" width=\"180\" height=\"310\">";
@@ -49,7 +56,7 @@ function allHero() {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/junkrat.png\" width=\"180\" height=\"310\">";
     }
-    
+
     else if (result == "9") {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/lucio.png\" width=\"180\" height=\"310\">";
@@ -84,7 +91,7 @@ function allHero() {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/pharah.png\" width=\"180\" height=\"310\">";
     }
-    
+
     else if (result == "16") {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/reaper.png\" width=\"180\" height=\"310\">";
@@ -119,7 +126,7 @@ function allHero() {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/torbjorn.png\" width=\"180\" height=\"310\">";
     }
-    
+
     else if (result == "23") {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/tracer.png\" width=\"180\" height=\"310\">";
@@ -149,7 +156,7 @@ function allHero() {
         var hero = document.getElementById("heroesId");
         hero.innerHTML = "<img src=\"assets/imgs/zenyatta.png\" width=\"180\" height=\"310\">";
     }
-} 
+}
 
 function tank() {
     var result = Math.floor(Math.random() * 6);
@@ -187,5 +194,123 @@ function tank() {
     else if (result == 6) {
         var hero = document.getElementById("tankId");
         hero.innerHTML = "<img src=\"assets/imgs/zarya.png\" width=\"180\" height=\"310\">";
+    }
+}
+
+function damage() {
+    var result = Math.floor(Math.random() * 6);
+
+    if (result == 0) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/ashe.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 1) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/bastion.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 2) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/doomfist.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 3) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/genji.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 4) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/hanzo.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 5) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/junkrat.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 6) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/mccree.png\" width=\"180\" height=\"310\">";
+    }
+
+    if (result == 0) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/mei.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 1) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/pharah.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 2) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/reaper.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 3) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/soldier76.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 4) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/sombra.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 5) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/symmetra.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 6) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/torbjorn.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 5) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/tracer.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 6) {
+        var hero = document.getElementById("damageId");
+        hero.innerHTML = "<img src=\"assets/imgs/widowmaker.png\" width=\"180\" height=\"310\">";
+    }
+}
+
+function support() {
+    var result = Math.floor(Math.random() * 6);
+
+    if (result == 0) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/ana.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 1) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/brigitte.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 2) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/lucio.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 3) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/mercy.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 4) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/moira.png\" width=\"180\" height=\"310\">";
+    }
+
+    else if (result == 5) {
+        var hero = document.getElementById("supportId");
+        hero.innerHTML = "<img src=\"assets/imgs/zenyatta.png\" width=\"180\" height=\"310\">";
     }
 }
